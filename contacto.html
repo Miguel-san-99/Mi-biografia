@@ -9,14 +9,16 @@
     <h1>Contacto</h1>
     <form method="post">
         <!--Input del formulario-->
-        <input id="femail" type="email" name="femail"><br>
+        <label for="email">Correo electronico</label>
+        <input id="email" type="email" name="email"><br>
+        <label for="mensaje">mensaje</label>
         <textarea id="mensaje" name="mensaje"></textarea><br>
-        <input id="fcbx" type="checkbox" name="fcbx"><br>
+        <label for="Categoria">Categoria</label>
+        <select>
+            <option>Trabajo</option>
+        </select>
         <input id="fsubmit" type="submit" name="fsubmit"><br>
         <!--Label del formulario-->
-        <label for="femail">Correo electronico</label>
-        <label for="fdescription">Descripcion</label>
-        <label for="fcbx">Asunto</label>
     </form>
 </body>
 </html>
