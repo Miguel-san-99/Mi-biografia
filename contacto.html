@@ -3,22 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css ">
     <title>Contacto</title>
 </head>
 <body>
-    <h1>Contacto</h1>
-    <form method="post">
-        <!--Input del formulario-->
-        <label for="email">Correo electronico</label>
-        <input id="email" type="email" name="email"><br>
-        <label for="mensaje">mensaje</label>
-        <textarea id="mensaje" name="mensaje"></textarea><br>
-        <label for="Categoria">Categoria</label>
-        <select>
-            <option>Trabajo</option>
-        </select>
-        <input id="fsubmit" type="submit" name="fsubmit"><br>
-        <!--Label del formulario-->
-    </form>
+    <div class="container">
+        <div class="row">
+            <h1>Contacto</h1>
+            <form method="get">
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo electronico</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                    <label for="mensaje" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="mensaje" rows="6" name="mensaje"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="categoria" class="form-label">Categoria</label>
+                    <select class="form-select" id="categoria" name="categoria" aria-label=""Default select example>
+                        <option selected>Selecciona una categoria</option>
+                        <option value="contratacion">Contratacion</option>
+                        <option value="personal">Personal</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+
+                <input class="form-control input-color " type="submit" value="Enviar">
+            </form>
+        </div>  
+    </div>
 </body>
 </html>
